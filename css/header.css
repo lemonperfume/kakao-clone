@@ -1,10 +1,17 @@
 /*
 top-header 영역 배경색과 아이템들 색깔 변경
-top-header 영역의 아이템들마다 글자와 보더 사이에 간격이 있다. */
+top-header 영역의 아이템들마다 글자와 보더 사이에 간격이 있다.
+header는 포지션이 fixed이다. 항상 그 자리에 있기 때문이다.
+그리고 폭을 100%로 해준다. 안할 경우 줄어든다. fixed를 하면,
+메인의 본문이 top-header와 간격이 없다. 그래서 패딩을 줘야한다.
+top-header에 top: 0을 입력하고 globals.css에서 padding-top: 60px; 를 입력한다. */
 .top-header {
   background-color: #523737;
   color: white;
   padding: 5px 10px 15px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 /* 아이템들 옆으로 정렬 */
