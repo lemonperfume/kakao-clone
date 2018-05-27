@@ -1,0 +1,54 @@
+/*
+top-header 영역 배경색과 아이템들 색깔 변경
+top-header 영역의 아이템들마다 글자와 보더 사이에 간격이 있다. */
+.top-header {
+  background-color: #523737;
+  color: white;
+  padding: 5px 10px 15px 10px;
+}
+
+/* 아이템들 옆으로 정렬 */
+.top-header .header__top,
+.top-header .header__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header__top과 header__bottom 사이에 간격이 있다.
+  폰트 사이즈가 크기 때문에 줄인다. */
+.top-header .header__top {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+/*
+Manage의 보더까지의 간격이 header__top에서 비행기의 보더까지의 간격보다 크다.
+상하 0, 좌우 10 */
+.top-header .header__bottom {
+  margin: 0 10px;
+}
+
+/*
+모든 헤더 칼럼의 폭을 33%로 설정해야 한다. 33 곱하기 3은 99니까 */
+.top-header .header__column {
+  width: 33%;
+}
+
+/*
+헤더 컬럼 오른쪽 끝 컬럼이 끝에 붙어야 한다.
+last-child는 모든 컬럼들 중에 마지막 컬럼을 의미한다. 배터리 컬럼, 나사 컬럼을 의미한다. */
+.top-header .header__column:last-child {
+  text-align: right;
+}
+
+/*
+가운데 있는 컬럼을 가운데 정렬해야 한다. */
+.top-header .header__column:nth-child(2) {
+  text-align: center;
+}
+
+/*
+Friends 다음에 나오는 숫자를 노란색으로 칠한다. */
+.top-header .header__number {
+  color: yellow;
+}
