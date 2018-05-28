@@ -1,0 +1,94 @@
+/*
+전체 채팅 리스트를 감싸고 있는 보더를 조정한다. */
+.chats .chats__list {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/*
+패딩을 만드는데 채팅 리스트를 위한 것이다.
+
+모든 채팅 리스트에도 보더 하단에 선을 깔아준다. */
+.chats__list .chats__chat {
+  padding: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/*
+마지막 채팅창에는 보더가 더블로 걸리니까 지워줘야 한다. */
+.chats__list .chats__chat:last-child {
+  border: none;
+}
+
+/*
+채팅 이미지를 조정한다. */
+.chats__chat .chat__content img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/*
+유저 네임, 채팅 내용을 날짜 옆에 적어야 한다.
+이를 위해서는 elements들의 부모를 알아야 한다. a 태그이다.
+링크(a)의 디스플레이를 flex로 설정하면, 날짜가 채팅 메시지 옆에 위치할거다. */
+.chats__list .chats__chat a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+채팅 이미지와 메시지의 위치를 조정한다. */
+.chats__chat .chat__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+/*
+유저 네임의 폰트 굵기를 조정한다. */
+.chat__preview .chat__user {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/*
+채팅 메시지 색깔을 조정한다. */
+.chat__preview .chat__last-message {
+  color: #b4b4b4;
+  font-size: 11px;
+}
+
+/*
+시간 텍스트를 조정한다. */
+.chats__chat .chat__date-time {
+  font-size: 10px;
+  color: #b4b4b4;
+}
+
+/*
+chats의 버튼을 조정한다.
+포지션을 fixed로 한다. 왜냐하면 스크롤 했을때
+계속 그 버튼을 보고 싶기 때문이다.
+
+box-shadow : 0px 3px 10px rgba(0, 0, 0, 0.2);
+좌우 설정 : 0px
+하단에서의 간격 : 3px
+흐리게 보이는 효과 : 10px
+색상 : rgba(0, 0, 0, 0.5) */
+.chat-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #ffe94a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  font-size: 20px;
+  color: #523737;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}

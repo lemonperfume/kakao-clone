@@ -12,6 +12,7 @@ top-header에 top: 0을 입력하고 globals.css에서 padding-top: 60px; 를 �
   position: fixed;
   width: 100%;
   top: 0;
+  /*z-index: 2;*/
 }
 
 /* 아이템들 옆으로 정렬 */
