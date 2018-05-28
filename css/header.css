@@ -43,6 +43,12 @@ Manage의 보더까지의 간격이 header__top에서 비행기의 보더까지�
 }
 
 /*
+header-bottom 에 있는 Manage, Edit 색깔을 바꾼다. */
+.top-header .header__bottom .header__column:first-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*
 헤더 컬럼 오른쪽 끝 컬럼이 끝에 붙어야 한다.
 last-child는 모든 컬럼들 중에 마지막 컬럼을 의미한다. 배터리 컬럼, 나사 컬럼을 의미한다. */
 .top-header .header__column:last-child {
