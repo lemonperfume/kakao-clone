@@ -3,3 +3,4 @@
 @import "globals.css";
 @import "header.css"; /* 맨 위 wifi 부분 */
 @import "navigation.css";
+@import "search-bar.css";

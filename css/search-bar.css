@@ -1,0 +1,50 @@
+/*
+검색창 위아래로 패딩이 10픽셀 있고 좌우로 25픽셀이 있다.
+
+검색창 포지션을 relative로 설정한다.
+그래서 아이콘의 포지션은 absolute가 될 것이다. */
+.search-bar {
+  padding: 10px 25px;
+  position: relative;
+}
+
+/*
+입력창의 경우 폭이 100%이다.
+
+입력창의 패딩을 조정한다.
+
+박스 모서리를 둥글게 한다.
+
+border는 0으로 준다.
+
+placeholder를 가운데 정렬 한다. */
+.search-bar input {
+  width: 100%;
+  padding: 5px 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 0;
+  background-color: #f1f2f3;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*
+focus state를 추가해야한다. 검색창을 선택하면 파란색으로 강조되는 효과이다.
+이 효과를 지울 것이다. */
+.search-bar input:focus {
+  outline: none;
+}
+
+/*
+아이콘의 부모 박스는 search-bar 이다.
+
+검색창 아이콘의 포지션을 변경한다.
+
+아이콘 색상을 변경해준다. */
+.search-bar i {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  color: #bbbbbb;
+}
