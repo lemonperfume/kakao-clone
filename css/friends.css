@@ -1,0 +1,62 @@
+/*
+index.html의 본문 헤더 부분을 설정한다. */
+.friends__section .friends__section-header {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 15px;
+  font-size: 12px;
+  color: #b4b4b4;
+}
+
+/*
+My Profile 아래의 friends__section-row를 설정해준다.
+
+display를 flex로 잡는다. 왜냐하면 옆에 아이템을 두고 싶기 때문이다.
+이미지가 늘어나서 아이템을 가운데 정렬한다. */
+.friends__section-rows .friends__section-row {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/*
+이름과 상태메시지 사이에 간격을 준다. */
+.friends__section-row.with-tagline {
+  justify-content: space-between;
+}
+
+/*
+상태메시지의 폰트 크기와 배경색, 패딩을 바꾼다. */
+.friends__section-tagline {
+  font-size: 10px;
+  background-color: #f0f0f0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #939393;
+}
+/*
+프로필 사진을 둥글게 만들어야 한다.
+border-radius 를 50% 로 잡으면 가로 세로 같은 비율로 줄어든다.
+
+이름과 프로필 사이에 간격이 있다. 이걸 마진이라고 한다. */
+.friends__section-row img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/*
+링크에 css를 준다.
+color를 inherit 으로 설정하면 부모에게서 색깔을 물려 받는다는 뜻이다. */
+.friends__section-row a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+컬럼을 조정한다. 가운데 정렬을 하지 않으면 이미지가 늘어나지 않아서 한다. */
+.friends__section-column {
+  display: flex;
+  align-items: center;
+}
