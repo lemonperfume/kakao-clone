@@ -1,4 +1,8 @@
+/*
+padding-bottom을 설정해줬기 때문에 이미지 전체를 볼 수 있는 것이다.
+만약 패딩을 안주게 되면 본문 맨 아래 부분이 nav 밑으로 내려가게 된다. */
 body {
   font-family: "Open Sans", sans-serif;
   padding-top: 60px;
+  padding-bottom: 60px;
 }

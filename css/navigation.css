@@ -3,7 +3,10 @@
 네비게이션은 포지션이 fixed이다. 항상 그 자리에 있기 때문이다.
 
 elements 들을 정리한다.
-또한 해당 elements와 tab-bar 상단까지 패딩을 준다. */
+
+tab-bar 상단 border를 수정한다.
+
+tab-bar의 좌우 패팅을 준다. 위 10, 좌 30, 아래 5, 우 30 */
 .tab-bar {
   background-color: #f7f7f7;
   position: fixed;
@@ -11,8 +14,8 @@ elements 들을 정리한다.
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  border-top: 1px solid #c1c1c1;
+  padding: 10px 30px 5px 30px;
 }
 
 .tab-bar .tab-bar__tab {
@@ -20,14 +23,31 @@ elements 들을 정리한다.
   justify-content: center;
   flex-direction: column;
   text-decoration: none;
+  color: #c1c1c1;
 }
+
 /*
 아이콘들은 display: block; 으로 되어야 한다.
 왜냐하면 아이콘들은 디폴트로 폰트처럼 설정이 되기 때문이다. inline으로 보인다는 뜻이다.
 
-아이콘과 텍스트 사이에 간격을 준다. */
+아이콘과 텍스트 사이에 간격을 준다.
+
+아이콘 크기를 크게 한다. 폰트 사이즈 24픽셀로 조정한다. */
 .tab-bar .tab-bar__tab i {
   display: block;
   margin-bottom: 5px;
   text-align: center;
+  font-size: 24px;
+}
+
+/*
+아이콘들의 글씨 크기를 작게 변경한다. */
+.tab-bar .tab-bar__title {
+  font-size: 10px;
+}
+
+/*
+선택 받은 아이콘은 헤더와 동일한 색상을 해야한다. */
+.tab-bar .tab-bar__tab--selected {
+  color: #523737;
 }
