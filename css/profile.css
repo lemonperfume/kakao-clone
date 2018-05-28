@@ -1,0 +1,96 @@
+/*
+헤더가 브라운 색인데 투명하게 수정한다. */
+.top-header--transparent {
+  background-color: transparent;
+}
+
+/*
+vh는 view for height, 80%의 스크린이라는 뜻이다.
+
+상단에 간격을 -60을 준다. 왜냐하면 디폴트로 본문 패딩이 60이기 때문에
+이걸 -60으로 상쇄해야 한다.
+
+배경 이미지를 넣는다.
+배경의 포지션도 바꿀 수 있다.
+background-position: center center;
+background-position: bottom center;
+background-position: center left;
+배경 사이즈도 100%. 50% 등으로 변경 할 수 있다.
+background-size: 100%;
+background-size: 50%; */
+.profile .profile__header {
+  height: 80vh;
+  background-image: url("https://i.pinimg.com/736x/60/b0/a7/60b0a7ef623bc2487385bace5d68fc8c--material-wallpapers-android-fantastic-wallpapers.jpg");
+  background-position: center center;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*
+프로필 사진 이미지를 위한 컨테이너를 만들어야 한다.
+왜냐하면 위치를 아래로 살짝 이동해야 하기 때문이다.
+
+포지션은 relative 를 줘서 움직일 수 있게 한다.(패딩 등을 사용할 수 있다.)
+포지션 relative의 뜻은 상하좌우 움직일 수 있게 해준다는 뜻이다. */
+.profile__header .profile__header--container {
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+
+/*
+프로필 이미지를 조정한다. */
+.profile__header--container img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/*
+profile__container 의 위치를 조정한다. */
+.profile .profile__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__container input {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.profile__actions {
+  display: flex;
+}
+
+/*
+액션 버튼에 커서를 대면 화살표가 보이게 할 수 있다.
+cursor: pointer;
+cursor: not-allowed; */
+.profile__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.profile__action-circle {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 50%;
+  color: #523737;
+  margin-bottom: 15px;
+}
+
+.profile__action-title {
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -12,7 +12,13 @@ top-header에 top: 0을 입력하고 globals.css에서 padding-top: 60px; 를 �
   position: fixed;
   width: 100%;
   top: 0;
-  /*z-index: 2;*/
+  z-index: 2;
+}
+
+/*
+profile.html 의 상단에 있는 x 링크를 흰색으로 수정한다. */
+.top-header a {
+  color: white;
 }
 
 /* 아이템들 옆으로 정렬 */
