@@ -1,0 +1,153 @@
+/*
+이전에 설정해둔 globals.css에서 패딩 하단이 있다고 설정해 둔 것을
+상쇄시켜야 한다. */
+.body-chat {
+  padding-bottom: 0;
+}
+
+/*
+헤더 부분의 배경색과 a 링크 색상을 조정한다. */
+.chat-header,
+.chat-header a {
+  background-color: #a1c0d6;
+  color: black;
+}
+
+/*
+헤더 아래에 보더를 표시한다. */
+.chat-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*
+채팅창의 배경색을 조정한다.
+
+높이는 해당 스크린의 100%로 지정한다.
+
+날짜 디바이더를 선택해서 보더와 날짜 사이의 간격을 조정한다. */
+.chat {
+  background-color: #a1c0d6;
+  height: 100vh;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*
+날짜 디바이더를 조정한다. */
+.chat .date-divider {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+/*
+.chat__message 의 위치를 조정한다. */
+.chat__message {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/*
+.chat__message-from-me 의 위치를 조정한다. */
+.chat__message-from-me {
+  justify-content: flex-end;
+}
+
+.chat__message-to-me img {
+  align-self: flex-start; /* 원본 이미지처럼 시작쪽으로 이미지가 이동한다. */
+}
+
+/*
+.chat__message-time 의 폰트 크기와 색깔을 조정한다. */
+.chat__message-time {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+.chat__message-from-me .chat__message-body 의 배경색과 마진을 조정한다. */
+.chat__message-from-me .chat__message-body {
+  background-color: #ffe934;
+  margin-left: 5px;
+}
+
+/*
+.chat__message-body 의 패딩과 보더, 배경색, 마진을 조정한다. */
+.chat__message-body {
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/*
+.chat__message-to-me 의 이미지를 조정한다. */
+.chat__message-to-me img {
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/*
+.chat__message-username 의 폰트 크기, 폰트 굵기, 마진을 조정한다. */
+.chat__message .chat__message-username {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/*
+유저네임과 메시지 본문 사이의 간격을 조정해야 한다. */
+.chat__message-center {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+.type-message 의 포지션은 fixed 이다.
+스크롤해도 움직이면 안되니까, 헤더나 네비게이션 처럼 움직이지 않는 포지션이다. */
+.type-message {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  height: 45px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center; /* 상하로 가운데 정렬한다. */
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.type-message .fa-plus {
+  color: #b4b4b4;
+}
+
+/*
+스마일 아이콘을 움직이기 위해서 포지션을 relative 로 수정한다. */
+.type-message__input {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.type-message__input input {
+  width: 100%;
+  padding: 10px;
+}
+
+.type-message__input .fa-smile-o {
+  position: absolute;
+  right: 40px;
+  color: #b4b4b4;
+}
+
+.type-message__input .record-message {
+  color: #523737;
+  background-color: #ffe934;
+  padding: 10px;
+  cursor: pointer;
+}
