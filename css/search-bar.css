@@ -24,16 +24,19 @@ placeholder를 가운데 정렬 한다. */
   box-sizing: border-box;
   border-radius: 5px;
   border: 0;
+  border: 1px solid transparent;
   background-color: #f1f2f3;
   font-size: 13px;
   text-align: center;
+  transition: border-color 0.2s linear;
 }
 
 /*
-focus state를 추가해야한다. 검색창을 선택하면 파란색으로 강조되는 효과이다.
+focus state를 추가해야한다. 검색창을W 선택하면 파란색으로 강조되는 효과이다.
 이 효과를 지울 것이다. */
 .search-bar input:focus {
   outline: none;
+  border-color: #ffe94a;
 }
 
 /*
