@@ -29,11 +29,15 @@ display를 flex로 잡는다. 왜냐하면 옆에 아이템을 두고 싶기 때
 /*
 상태메시지의 폰트 크기와 배경색, 패딩을 바꾼다. */
 .friends__section-tagline {
-  font-size: 10px;
+  font-size: 11px;
   background-color: #f0f0f0;
   padding: 10px 10px;
   border-radius: 5px;
   color: #939393;
+}
+
+.friends__section-tagline.with-twoline {
+  line-height: 15px;
 }
 /*
 프로필 사진을 둥글게 만들어야 한다.
@@ -49,11 +53,20 @@ infinite 를 넣으면 계속 회전한다.
   width: 40px;
   border-radius: 50%;
   margin-right: 15px;
-  animation: 1s rotateFriend ease-in-out;
+  animation: 1.05s rotateFriend infinite ease-in-out;
 }
 
 /*
-프로필 사진에 애니메이션 효과를 주기 위한 사전 작업이다. */
+프로필 사진에 애니메이션 효과를 주기 위한 사전 작업이다.
+0% {
+  transform: rotateY(0deg);
+}
+50% {
+  transform: rotateY(180deg) scale(0.5);
+}
+100% {
+  transform: rotateY(360deg);
+} */
 @keyframes rotateFriend {
   from {
     transform: rotateY(0deg);

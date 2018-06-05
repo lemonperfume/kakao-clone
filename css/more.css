@@ -103,6 +103,7 @@ plus-friends__header에 속한 아이템들의 위치를 조정한다. */
 plus-friends__learn-more 의 색깔을 바꾼다. */
 .plus-friends__header .plus-friends__learn-more {
   color: #b4b4b4;
+  font-size: 11px;
 }
 
 /*

@@ -64,6 +64,7 @@ profile__container 의 위치를 조정한다. */
 .profile__container input {
   padding: 5px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .profile__actions {

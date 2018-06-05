@@ -65,6 +65,7 @@
 .chat__message-time {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
 }
 
 /*
@@ -80,6 +81,7 @@
   padding: 10px 5px;
   border-radius: 5px;
   background-color: #ffffff;
+  font-size: 13px;
 }
 
 /*
